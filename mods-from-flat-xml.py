@@ -185,3 +185,23 @@ def process_directory(source_directory, destination_directory):
 
             record = ET.parse(source_file).getroot()
             process_single_record(record, destination_file)
+
+if __name__ == '__main__':
+    prompt = input('Are you processing a file or a directory? (input F or D) ')
+    prompt = prompt.lower()
+    if prompt == 'd':
+        source_prompt = input('Input a path to your source directory: ')
+        target_prompt = input('Input a path to your target directory: ')
+        try: 
+            process_directory(source prompt, target_prompt)
+        except:
+            print('Error: invalid path')
+    elif prompt == 'f':
+        source_prompt = input('Input a path to your source file: ')
+        target_prompt = input('Input a path to your target directory: ')
+        try:
+            process_single_record(source_prompt, target_prompt)
+        except:
+            print('Error: invalid path')
+    else: 
+        print('Error: invalid source type')
