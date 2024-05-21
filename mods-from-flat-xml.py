@@ -2,8 +2,7 @@ import os
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import lxml.etree as etree
-
-#Code starts here
+from datetime import date
 
 def safe_set_text(parent, tag, text, attributes=None):
     if text: 
@@ -15,20 +14,21 @@ def safe_set_text(parent, tag, text, attributes=None):
                     elem.set(key, value)
     return None
 
-
 def add_title_info(mods_root, record):
     titles = {
         'Title_English': {'lang': 'eng'},
-        'Title_Tibetan': {'lang': 'tib', 'script': 'Tibt'},
-        'Title_Wylie': {'lang': 'tib', 'script': 'Latn'}, 
-        'Title_Chinese': {'lang': 'chi', 'script': 'Hant'}, 
-        'Title_pinyin': {'lang': 'chi', 'script': 'Latn'},  
+        'Title_Tibetan': {'lang': 'tib'},
+        'Title_Wylie': {'lang': 'tib', 'transliteration': 'Wylie'}, 
+        'Title_Chinese': {'lang': 'chi'}, 
+        'Title_Pinyin': {'lang': 'chi', 'transliteration': 'pinyin'}
     }
 
     for title_key, attrs in titles.items():
         title_element = record.find(title_key)
         if title_element is not None and title_element.text:
-            title_info = ET.SubElement(mods_root, 'titleInfo', lang=attrs['lang'], script=attrs['script'] if attrs['script'] else {})
+            title_info = ET.SubElement(mods_root, 'titleInfo', lang=attrs['lang'])
+            if 'transliteration' in attrs:
+                title_info.set('transliteration', attrs['transliteration'])
             safe_set_text(title_info, 'title', title_element.text)
     
     translated_title = record.find('Translated_title')
@@ -36,54 +36,34 @@ def add_title_info(mods_root, record):
         title_info_translated = ET.SubElement(mods_root, 'titleInfo', type='translated')
         safe_set_text(title_info_translated, 'title', translated_title.text.strip())
 
-
 def add_location_info(mods_root, record):
     origin_info = ET.SubElement(mods_root, 'originInfo')
-    
-    primary_place = ET.SubElement(origin_info, 'place')
 
-    city_terms = {
-        'Place_name_Tibetan': {'lang': 'tib', 'script': 'Tibt'},
-        'Place_Wylie': {'lang': 'tib', 'script': 'Latn'},
-        'Place_Chinese': {'lang': 'chi', 'script': 'Hant'},
-        'Place_pinyin': {'lang': 'chi', 'script': 'Latn'},
-        'Place_English': {'lang': 'eng'}
-    }
+    # Place with its terms, ensuring no nested <place> elements
+    place = ET.SubElement(origin_info, 'place')
+    add_place_term(place, record, 'Place_name_Tibetan', 'tib', None)
+    add_place_term(place, record, 'Place_Wylie', 'tib', None, transliteration=True)
+    add_place_term(place, record, 'Place_Chinese', 'chi', None)
+    add_place_term(place, record, 'Place_pinyin', 'chi', None, transliteration=True)
+    add_place_term(place, record, 'Place_English', 'eng', None)
+    add_place_term(place, record, 'Province_English', 'eng', None)
+    add_place_term(place, record, 'Province_Tibetan', 'tib', None)
+    add_place_term(place, record, 'Prefectur_District_Tibetan', 'tib', None)
+    add_place_term(place, record, 'Prefecture_District_Wylie', 'tib', None, transliteration=True)
+    add_place_term(place, record, 'Prefectur_District_Chinese', 'chi', None)
+    add_place_term(place, record, 'Prefecture_District_English', 'eng', None)
 
-    province_terms = {
-        'Province_English': {'lang': 'eng'},
-        'Province_Tibetan': {'lang': 'tib', 'script': 'Tibt'},
-        'Province_Chinese': {'lang': 'zho', 'script': 'Hant'},
-        'Province_pinyin': {'lang': 'zho', 'script': 'Latn'},
-        'Province_Wylie': {'lang': 'tib', 'script': 'Latn'}
-    }
+    # Country place term, not nested under city
+    add_place_term(place, record, 'Country_SO_3166-1_alpha-3', 'eng', None)
 
-    district_terms = {
-        'Prefectur_District_Tibetan': {'lang': 'tib', 'script': 'Tibt'},
-        'Prefecture_District_Wylie': {'lang': 'tib', 'script': 'Latn'},
-        'Prefecture_District_English': {'lang': 'eng'},
-        'Prefectur_District_Chinese': {'lang': 'chi', 'script': 'Hant'}
-    }
-
-    for key, attrs in city_terms.items():
-        text = record.find(key).text if record.find(key) is not None else None
-        safe_set_text(primary_place, 'placeTerm', text, {'type': "text", 'authority': "marc", **attrs})
-
-    country_place = ET.SubElement(primary_place, 'place')
-    country_text = record.find('Country_SO_3166-1_alpha-3').text if record.find('Country_SO_3166-1_alpha-3') is not None else None
-    safe_set_text(country_place, 'placeTerm', country_text, {'type': "text", 'authority': "marc", 'lang': 'eng'})
-
-    province_place = ET.SubElement(country_place, 'place')
-    for key, attrs in province_terms.items():
-        text = record.find(key).text if record.find(key) is not None else None
-        safe_set_text(province_place, 'placeTerm', text, {'type': "text", 'authority': "marc", **attrs})
-
-    # Adding district information
-    district_place = ET.SubElement(province_place, 'place')
-    for key, attrs in district_terms.items():
-        text = record.find(key).text if record.find(key) is not None else None
-        safe_set_text(district_place, 'placeTerm', text, {'type': "text", 'authority': "marc", **attrs})
-
+def add_place_term(place, record, field_name, lang, script, transliteration=False):
+    element = record.find(field_name)
+    if element is not None and element.text:
+        attrs = {'type': "text", 'authority': "marc", 'lang': lang}
+        if transliteration:
+            attrs['transliteration'] = 'ISO'
+        term = ET.SubElement(place, 'placeTerm', **attrs)
+        term.text = element.text.strip()
 
 def add_publication_info(mods_root, record):
     origin_info = ET.SubElement(mods_root, 'originInfo')
@@ -103,7 +83,7 @@ def add_publication_info(mods_root, record):
             field_name = f"{role_type}{suffix}"
             person_text = record.find(field_name).text if record.find(field_name) is not None else None
             if person_text:
-                name = ET.SubElement(mods_root, 'name')
+                name = ET.SubElement(mods_root, 'name', lang=suffix.split('_')[0])
                 safe_set_text(name, 'namePart', person_text)
                 role = ET.SubElement(name, 'role')
                 safe_set_text(role, 'roleTerm', role_type.lower(), {'type': "text"})
@@ -113,7 +93,7 @@ def add_publication_info(mods_root, record):
         'CN_Newspaper_Code': None
     }
 
-    for id_field, id_text in ids.items():
+    for id_field in ids.keys():
         id_text = record.find(id_field).text if record.find(id_field) is not None else None
         if id_text:
             identifier = ET.SubElement(mods_root, 'identifier', type="local")
@@ -135,7 +115,7 @@ def add_publication_info(mods_root, record):
 
     dates = {
         'First_Issue': 'start',
-        'last_issue': 'end'
+        'Last_Issue': 'end'
     }
     for date_field, point in dates.items():
         date_text = record.find(date_field).text if record.find(date_field) is not None else None
@@ -143,8 +123,7 @@ def add_publication_info(mods_root, record):
             date_issued = ET.SubElement(origin_info, 'dateIssued', encoding="w3cdtf", point=point)
             date_issued.text = date_text
 
-    
-    notes_fields = ['description', 'Donor_Code', 'Places_of_distribution', 'Holdings_in_other_collections_w_o_xml_sources', 'Diverge_digital_holdings']
+    notes_fields = ['Description', 'Donor_Code', 'Places_of_distribution', 'Holdings_in_other_collections_w_o_xml_sources', 'Diverge_digital_holdings']
     for note_field in notes_fields:
         note_text = record.find(note_field).text if record.find(note_field) is not None else None
         if note_text:
@@ -158,15 +137,30 @@ def add_publication_info(mods_root, record):
         url = ET.SubElement(location, 'url')
         url.text = library_links_text
 
+def add_record_info(mods_root):
+    record_info = ET.SubElement(mods_root, 'recordInfo')
+    record_origin = ET.SubElement(record_info, 'recordOrigin')
+    record_origin.text = 'Automatically generated by script (author Engels, James J.)'
+    record_creation = ET.SubElement(record_info, 'recordCreationDate', encoding="w3cdtf")
+    today = date.today()
+    record_creation.text = today.strftime('%Y-%m-%d') # Example date, adjust as needed
+
 def initialize_mods_root():
-    mods_root = ET.Element('mods', xmlns="http://www.loc.gov/mods/v3")
+    attrs = {
+        'xmlns': "http://www.loc.gov/mods/v3",
+        'xmlns:xsi': "http://www.w3.org/2001/XMLSchema-instance",
+        'version': "3.8",
+        'xsi:schemaLocation': "http://www.loc.gov/standards/mods/v3/mods-3-8.xsd"
+    }
+    mods_root = ET.Element('mods', attrib=attrs)
     return mods_root
-        
+
 def process_single_record(record, destination):
     mods_root = initialize_mods_root()
     add_title_info(mods_root, record)
     add_location_info(mods_root, record)
     add_publication_info(mods_root, record)
+    add_record_info(mods_root)
 
     if not destination.endswith('.xml'):
         destination += '.xml'
@@ -185,23 +179,3 @@ def process_directory(source_directory, destination_directory):
 
             record = ET.parse(source_file).getroot()
             process_single_record(record, destination_file)
-
-if __name__ == '__main__':
-    prompt = input('Are you processing a file or a directory? (input F or D) ')
-    prompt = prompt.lower()
-    if prompt == 'd':
-        source_prompt = input('Input a path to your source directory: ')
-        target_prompt = input('Input a path to your target directory: ')
-        try: 
-            process_directory(source prompt, target_prompt)
-        except:
-            print('Error: invalid path')
-    elif prompt == 'f':
-        source_prompt = input('Input a path to your source file: ')
-        target_prompt = input('Input a path to your target directory: ')
-        try:
-            process_single_record(source_prompt, target_prompt)
-        except:
-            print('Error: invalid path')
-    else: 
-        print('Error: invalid source type')
