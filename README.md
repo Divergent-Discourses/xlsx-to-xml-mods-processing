@@ -1,4 +1,4 @@
-This repository contains two functions for converting our project-internal metadata spreadsheets to MODS-formatted XML. Note that these scripts are for project use only, and will not work outside of the Diverge project, because the conversion process from Excel to XML requires hard-coding of column names. 
+This repository contains two functions for converting our project-internal metadata spreadsheets (Diverge_Tibetan_Newspaper_Metadata_v2.xlsx) to MODS-formatted XML. Note that these scripts are for project use only, and will not work outside of the Diverge project, because the conversion process from Excel to XML requires hard-coding of column names. Generally, columns and column names cannot be modified. However, new newspaper records (rows) can be added and information updated. To add, alter, or delete columns get in touch with the developers.   
 
 The workflow is executed in two steps. First, the python programs must be stored hierarchically at or above the level where the raw data and the target directory is stored, in the same hierarchy. Then, in the command line interface, run the following command:
 
