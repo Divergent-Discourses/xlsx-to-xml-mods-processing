@@ -1,8 +1,6 @@
-import os
-import xml.etree.ElementTree as ET
-from xml.dom import minidom
-import lxml.etree as etree
+from xml.etree import ElementTree as ET
 from datetime import date
+import os
 
 def safe_set_text(parent, tag, text, attributes=None):
     if text: 
@@ -25,11 +23,11 @@ def add_title_info(mods_root, record):
 
     for title_key, attrs in titles.items():
         title_element = record.find(title_key)
-        if title_element is not None and title_element.text:
+        if title_element is not None and title_element.text and title_element.text.strip():
             title_info = ET.SubElement(mods_root, 'titleInfo', lang=attrs['lang'])
             if 'transliteration' in attrs:
                 title_info.set('transliteration', attrs['transliteration'])
-            safe_set_text(title_info, 'title', title_element.text)
+            safe_set_text(title_info, 'title', title_element.text.strip())
     
     translated_title = record.find('Translated_title')
     if translated_title is not None and translated_title.text and translated_title.text.strip():
@@ -38,40 +36,62 @@ def add_title_info(mods_root, record):
 
 def add_location_info(mods_root, record):
     origin_info = ET.SubElement(mods_root, 'originInfo')
+    place_added = False
 
-    # Place with its terms, ensuring no nested <place> elements
-    place = ET.SubElement(origin_info, 'place')
-    add_place_term(place, record, 'Place_name_Tibetan', 'tib', None)
-    add_place_term(place, record, 'Place_Wylie', 'tib', None, transliteration=True)
-    add_place_term(place, record, 'Place_Chinese', 'chi', None)
-    add_place_term(place, record, 'Place_pinyin', 'chi', None, transliteration=True)
-    add_place_term(place, record, 'Place_English', 'eng', None)
-    add_place_term(place, record, 'Province_English', 'eng', None)
-    add_place_term(place, record, 'Province_Tibetan', 'tib', None)
-    add_place_term(place, record, 'Prefectur_District_Tibetan', 'tib', None)
-    add_place_term(place, record, 'Prefecture_District_Wylie', 'tib', None, transliteration=True)
-    add_place_term(place, record, 'Prefectur_District_Chinese', 'chi', None)
-    add_place_term(place, record, 'Prefecture_District_English', 'eng', None)
+def add_location_info(mods_root, record):
+    origin_info = ET.SubElement(mods_root, 'originInfo')
+    place_added = False
 
-    # Country place term, not nested under city
-    add_place_term(place, record, 'Country_SO_3166-1_alpha-3', 'eng', None)
+    place_terms = OrderedDict()
+    
+    def collect_place_term(record, field_name, lang, transliteration=None):
+        element = record.find(field_name)
+        if element is not None and element.text:
+            key = (element.text.strip(), lang, transliteration)
+            place_terms[key] = element.text.strip()
 
-def add_place_term(place, record, field_name, lang, script, transliteration=False):
-    element = record.find(field_name)
-    if element is not None and element.text:
-        attrs = {'type': "text", 'authority': "marc", 'lang': lang}
-        if transliteration:
-            attrs['transliteration'] = 'ISO'
-        term = ET.SubElement(place, 'placeTerm', **attrs)
-        term.text = element.text.strip()
+    # Collect all place terms
+    collect_place_term(record, 'Place_name_Tibetan', 'tib', 'Wylie')
+    collect_place_term(record, 'Place_Wylie', 'tib', 'Wylie')
+    collect_place_term(record, 'Place_Chinese', 'chi', 'pinyin')
+    collect_place_term(record, 'Place_pinyin', 'chi', 'pinyin')
+    collect_place_term(record, 'Place_English', 'eng')
+    collect_place_term(record, 'Province_English', 'eng')
+    collect_place_term(record, 'Province_Tibetan', 'tib', 'Wylie')
+    collect_place_term(record, 'Prefectur_District_Tibetan', 'tib', 'Wylie')
+    collect_place_term(record, 'Prefecture_District_Wylie', 'tib', 'Wylie')
+    collect_place_term(record, 'Prefectur_District_Chinese', 'chi', 'pinyin')
+    collect_place_term(record, 'Prefecture_District_English', 'eng')
+    collect_place_term(record, 'Country_SO_3166-1_alpha-3', 'eng')
+
+
+    if place_terms:
+        place = ET.SubElement(origin_info, 'place')
+        for (text, lang, transliteration), value in place_terms.items():
+            attrs = {'type': "text", 'authority': "marc", 'lang': lang}
+            if transliteration:
+                attrs['transliteration'] = transliteration
+            term = ET.SubElement(place, 'placeTerm', **attrs)
+            term.text = value
+            place_added = True
+
+    place_identifier = record.find('PlaceIdentifier')
+    if place_identifier is not None and place_identifier.text:
+        place_id_elem = ET.SubElement(place, 'placeIdentifier', type="local")
+        place_id_elem.text = place_identifier.text.strip()
+
+    if not place_added:
+        mods_root.remove(origin_info)
 
 def add_publication_info(mods_root, record):
     origin_info = ET.SubElement(mods_root, 'originInfo')
+    origin_info_added = False
 
     frequency_text = record.find('Frequency').text if record.find('Frequency') is not None else None
     if frequency_text:
         frequency = ET.SubElement(origin_info, 'frequency')
         frequency.text = frequency_text
+        origin_info_added = True
 
     roles = {
         'Publisher': ['_Tibetan', '_Wylie', '_Chinese', '_pinyin', '_English'],
@@ -83,8 +103,14 @@ def add_publication_info(mods_root, record):
             field_name = f"{role_type}{suffix}"
             person_text = record.find(field_name).text if record.find(field_name) is not None else None
             if person_text:
-                name = ET.SubElement(mods_root, 'name', lang=suffix.split('_')[0])
-                safe_set_text(name, 'namePart', person_text)
+                transliteration = None
+                if 'Wylie' in suffix:
+                    transliteration = 'Wylie'
+                elif 'pinyin' in suffix:
+                    transliteration = 'pinyin'
+                lang = suffix.split('_')[1].lower()
+                name = ET.SubElement(mods_root, 'name', lang=lang)
+                safe_set_text(name, 'namePart', person_text.strip())
                 role = ET.SubElement(name, 'role')
                 safe_set_text(role, 'roleTerm', role_type.lower(), {'type': "text"})
 
@@ -122,6 +148,7 @@ def add_publication_info(mods_root, record):
         if date_text:
             date_issued = ET.SubElement(origin_info, 'dateIssued', encoding="w3cdtf", point=point)
             date_issued.text = date_text
+            origin_info_added = True
 
     notes_fields = ['Description', 'Donor_Code', 'Places_of_distribution', 'Holdings_in_other_collections_w_o_xml_sources', 'Diverge_digital_holdings']
     for note_field in notes_fields:
@@ -137,20 +164,29 @@ def add_publication_info(mods_root, record):
         url = ET.SubElement(location, 'url')
         url.text = library_links_text
 
+    if not origin_info_added:
+        mods_root.remove(origin_info)
+
 def add_record_info(mods_root):
     record_info = ET.SubElement(mods_root, 'recordInfo')
+    
     record_origin = ET.SubElement(record_info, 'recordOrigin')
     record_origin.text = 'Automatically generated by script (author Engels, James J.)'
+    
     record_creation = ET.SubElement(record_info, 'recordCreationDate', encoding="w3cdtf")
     today = date.today()
-    record_creation.text = today.strftime('%Y-%m-%d') # Example date, adjust as needed
+    record_creation.text = today.strftime('%Y-%m-%d')
+
+    language_of_cataloging = ET.SubElement(record_info, 'languageOfCataloging')
+    language_term = ET.SubElement(language_of_cataloging, 'languageTerm', type="code", authority="iso639-2")
+    language_term.text = 'eng'
 
 def initialize_mods_root():
     attrs = {
         'xmlns': "http://www.loc.gov/mods/v3",
         'xmlns:xsi': "http://www.w3.org/2001/XMLSchema-instance",
         'version': "3.8",
-        'xsi:schemaLocation': "http://www.loc.gov/standards/mods/v3/mods-3-8.xsd"
+        'xsi:schemaLocation': "http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-8.xsd"
     }
     mods_root = ET.Element('mods', attrib=attrs)
     return mods_root
