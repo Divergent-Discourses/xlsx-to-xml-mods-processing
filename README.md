@@ -7,7 +7,7 @@ The spreadsheet [Diverge_Tibetan Newspaper Metadata for XML v2.xlsx](https://git
 - Schubert, J. 1935. "Tibetische Literatur in modernem Gewande (Mit einem Exkurs über tibetische Zeitungen)." Artibus Asiae 5(1), 95–98.
 - Schubert, J. 1958. *Publikationen des modernen chinesisch-tibetischen Schrifttums.*/ Veröffentlichung / Deutsche Akademie der Wissenschaften, Institut für Orientforschung 39. Berlin: Akademie-Verlag.
 - Kolmaš, J. 1962. "Tibetan Literature in China." Archív Orientální 30, 638–44.
-- Kolmaš, J. 1978. *Tibetan Books and Newspapers (Chinese collection): With Bibliographical Notes.* Asiatische Forschungen 62. Wiesbaden: Harrassowitz.
+- Kolmaš, J. 1978. [*Tibetan Books and Newspapers (Chinese collection): With Bibliographical Notes.*](https://pahar.in/pahar/Books%20and%20Articles/Tibet%20and%20China/1978%20Tibetan%20Books%20and%20Newspapers%20(Chinese%20Collection%20)%20with%20bibliographical%20notes%20by%20Kolmas%20s.pdf) Asiatische Forschungen 62. Wiesbaden: Harrassowitz.
 - Erhard, F.X. 2015. ["Tibetan Mass Media. A Preliminary Survey of Tibetan Language Newspapers."](https://www.academia.edu/20285155/Tibetan_Mass_Media_A_Preliminary_Survey_of_Tibetan_Language_Newspapers) In O. Czaja and G. Hazod (eds.) *The Illuminating Mirror: Tibetan Studies in Honour of Per K. Sørensen on the Occasion of his 65th Birthday,* 155–171. Contributions to Tibetan Studies 12. Wiesbaden: Reichert.
 - Erhard, F.X. and H. Hou 2018. ["The Melong in Context. A Survey of the Earliest Tibetan Language Newspapers 1904–1960."](https://www.academia.edu/38535397/The_Melong_in_Context_A_Survey_ofthe_Earliest_Tibetan_Language_Newspapers_1904_1960) In F. Wang-Toutain and M. Preziosi (eds.) *Cahiers du Mirror,* 1–40. Paris: Collège de France.
 
