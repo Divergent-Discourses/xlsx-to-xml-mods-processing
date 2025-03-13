@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">SGN</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">ཀན་ལྷོ་གསར་འགྱུར་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">kan lho gsar 'gyur</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng">South Gansu News</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn">gannan bao</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi">甘南報</mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="tib">ཀན་ལྷོ་ཉིན་རེའི་གསར་འགྱུར་ཁང་</mods:publisher>
+    <mods:publisher lang="tib-Latn">kan lho nyin re'i gsar 'gyur khang</mods:publisher>
+    <mods:publisher lang="chi">赣南日报社</mods:publisher>
+    <mods:publisher lang="chi-Latn">gannan ribaoshe</mods:publisher>
+    <mods:dateCreated>01.05.1953 – continuing</mods:dateCreated>
+    <mods:frequency>every 5 days</mods:frequency>
+    <mods:dist>Gannan</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">cn</mods:languageTerm>
+  </mods:language>
+  <mods:abstract>Was preceded by the Bzung chu gsar 'gyur (Xiahe bao). Until January 1, 1955 it was bilingual; then it was published in two monolingual editions. From No 413, 1959, the format was reduced to 26 x 37,5 cm</mods:abstract>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="eng">Gansu</mods:province>
+      <mods:county lang="eng">Gannan</mods:county>
+      <mods:city lang="eng">Zö</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib">ཀན་སུའུ་</mods:province>
+      <mods:county lang="tib">ཀན་ལྷོ་</mods:county>
+      <mods:city lang="tib">གཙོས་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">kan lho</mods:county>
+      <mods:city lang="tib-Latn">gtsos</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi">甘南</mods:county>
+      <mods:city lang="chi">合作</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn">Hezuo</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>CHN</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">1332758657</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:note type="internal-holdings">1959.01.08 - 1959.03.28</mods:note>
+  <mods:note type="comment">incomplete</mods:note>
+  <mods:identifier type="CN-newspaper-code">CN62-0006-Z</mods:identifier>
+  <mods:note type="donor">Oriental Institute (CAS)</mods:note>
+  <mods:location>
+    <mods:url>https://kramerius.lib.cas.cz/search/handle/uuid:35eb111e-88b1-4aac-93da-9405fe0a0c80</mods:url>
+  </mods:location>
+</mods:mods>

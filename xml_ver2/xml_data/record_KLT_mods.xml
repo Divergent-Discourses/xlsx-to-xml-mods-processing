@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">KLT</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">ཀུན་ཁྱབ་རླུང་འཕྲིན་གསར་འགྱུར་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">kun khyab rlung 'phrin gsar 'gyur</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng">Universal Radio News</mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="tib">མི་རིགས་དཔེ་བསྐྲུན་ཁང་</mods:publisher>
+    <mods:publisher lang="tib-Latn">mi rigs dpe bskrun khang</mods:publisher>
+    <mods:dateCreated>unknown – unknown</mods:dateCreated>
+    <mods:dist>China</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">cn</mods:languageTerm>
+  </mods:language>
+  <mods:abstract>misplaced</mods:abstract>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="eng">Peking</mods:province>
+      <mods:county lang="eng"></mods:county>
+      <mods:city lang="eng">Peking</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib">པེ་ཅིན་</mods:province>
+      <mods:county lang="tib"></mods:county>
+      <mods:city lang="tib">པེ་ཅིན་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn"></mods:county>
+      <mods:city lang="tib-Latn">pe cin</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi"></mods:county>
+      <mods:city lang="chi"></mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn">Beijing</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>CHN</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4075971-4</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:note type="donor">Grassi Museum für Völkerkunde</mods:note>
+  <mods:note type="external-holdings">not scanned so far</mods:note>
+</mods:mods>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">ZMX</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">ཀྲུང་དབྱང་མི་རིགས་སློབ་གྲྭ་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">krung dbyang mi rigs slob grwa</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng">Central Nationalities University</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn">zhongyang minzu xueyuan</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi">中央民族學院</mods:title>
+  </mods:titleInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">cn</mods:languageTerm>
+  </mods:language>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="eng">Beijing</mods:province>
+      <mods:county lang="eng">Peking</mods:county>
+      <mods:city lang="eng">Peking</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib">པེ་ཅིན་</mods:province>
+      <mods:county lang="tib">པེ་ཅིན་</mods:county>
+      <mods:city lang="tib">པེ་ཅིན་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">pe cin</mods:county>
+      <mods:city lang="tib-Latn">pe cin</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi">北京</mods:county>
+      <mods:city lang="chi">北京</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn">Beijing</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>CHN</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4075971-4</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:note type="internal-holdings">1959.04.18 - 1959.05.13 </mods:note>
+  <mods:note type="comment">incomplete</mods:note>
+  <mods:note type="donor">Oriental Institute (CAS)</mods:note>
+  <mods:location>
+    <mods:url>https://kramerius.lib.cas.cz/uuid/uuid:f3f03d37-52f4-40bc-96b0-7d3cfba469eb</mods:url>
+  </mods:location>
+  <mods:originInfo>
+    <mods:dist>Peking</mods:dist>
+  </mods:originInfo>
+</mods:mods>

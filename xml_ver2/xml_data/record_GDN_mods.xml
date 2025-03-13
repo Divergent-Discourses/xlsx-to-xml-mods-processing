@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">GDN</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">དཀར་མཛེས་ཉིན་རེའི་གསར་འགྱུར་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">dkar mdzes nyin re'i gsar 'gyur</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng">Ganze Daily</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn">ganzi ribao</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi">甘孜日報</mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="chi">甘孜州委宣傳部</mods:publisher>
+    <mods:publisher lang="chi-Latn">ganzi zhou weixuanchuanbu</mods:publisher>
+    <mods:dateCreated>05.1958</mods:dateCreated>
+    <mods:frequency>daily</mods:frequency>
+    <mods:dist>Ganzi</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">cn</mods:languageTerm>
+  </mods:language>
+  <mods:abstract>daily except Mondays</mods:abstract>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="eng">Sichuan</mods:province>
+      <mods:county lang="eng">Ganzi</mods:county>
+      <mods:city lang="eng">Dartsedo</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib">སི་ཁྲོན་</mods:province>
+      <mods:county lang="tib">དཀར་མཛེས་</mods:county>
+      <mods:city lang="tib">དར་རྩེ་མདོ་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">dkar mdzes</mods:county>
+      <mods:city lang="tib-Latn">dar rtse mdo</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi">甘孜</mods:county>
+      <mods:city lang="chi">康定</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn">Kangding</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>CHN</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">1150249846</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:note type="internal-holdings">1959.01.03 - 1959.10.31 </mods:note>
+  <mods:note type="comment">incomplete</mods:note>
+  <mods:identifier type="CN-newspaper-code">CN51-0018-Z</mods:identifier>
+  <mods:note type="donor">Oriental Institute (CAS)</mods:note>
+  <mods:note type="donor">Robert Barnett (priv.)</mods:note>
+  <mods:note type="external-holdings">RB: 1959.10.30; 1959.10.31</mods:note>
+  <mods:location>
+    <mods:url>https://kramerius.lib.cas.cz/search/handle/uuid:57f54914-9dc6-4f0d-9edc-e63b48636b2e</mods:url>
+  </mods:location>
+</mods:mods>

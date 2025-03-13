@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">CWN</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">ཀྲུང་དབྱང་གསར་འགྱུར་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">krung dbyang gsar 'gyur</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="eng">"Central Weekly News"</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn">zhong yang zhou bao</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi">中央週報</mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="tib">གོ་མིན་ཏཱང་ཀྲུང་དབྱང་གསར་འགྱུར་པར་ཁང་</mods:publisher>
+    <mods:publisher lang="tib-Latn">go min tāng krung dbyang gsar 'gyur khang</mods:publisher>
+    <mods:dateCreated>Vol. 1(1) 12.02.1963 – 1978?</mods:dateCreated>
+    <mods:frequency>weekly</mods:frequency>
+    <mods:dist>India</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:abstract>Republican years on newspaper</mods:abstract>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="eng">West Bengal</mods:province>
+      <mods:county lang="eng">Calcutta</mods:county>
+      <mods:city lang="eng">Calcutta</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="tib"></mods:province>
+      <mods:county lang="tib">ཀ་ལི་ཀ་ཏ་</mods:county>
+      <mods:city lang="tib">ཀ་ཏ་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">ka ta</mods:county>
+      <mods:city lang="tib-Latn">ka ta</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi"></mods:county>
+      <mods:city lang="chi"></mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn"></mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>IND</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4029344-0</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:name type="personal">
+    <mods:namePart type="family" lang="eng">Tempa Landu</mods:namePart>
+    <mods:role>
+      <mods:roleTerm>editor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:name type="personal">
+    <mods:namePart type="family" lang="tib">བསྟན་པ་ལྷུན་འགྲུབ་</mods:namePart>
+    <mods:role>
+      <mods:roleTerm>editor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:name type="personal">
+    <mods:namePart type="family" lang="tib-Latn"> Bstan pa lhun 'grub</mods:namePart>
+    <mods:role>
+      <mods:roleTerm>editor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:note type="internal-holdings">1963.02.12 - 1972 </mods:note>
+  <mods:note type="comment">incomplete</mods:note>
+  <mods:identifier type="IN-registration-number">Reg. No. R. N. 8594/36</mods:identifier>
+  <mods:note type="donor">Vienna University South Asian, Tibetan and Buddhist Studies Library</mods:note>
+  <mods:note type="donor">University of Washington Libraries</mods:note>
+  <mods:note type="donor">National Chengchi University</mods:note>
+  <mods:location>
+    <mods:url>https://permalink.obvsg.at/AC16810977</mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url> https://orbiscascade-washington.primo.exlibrisgroup.com/permalink/01ALLIANCE_UW/1juclfo/alma99133499060001452</mods:url>
+  </mods:location>
+</mods:mods>

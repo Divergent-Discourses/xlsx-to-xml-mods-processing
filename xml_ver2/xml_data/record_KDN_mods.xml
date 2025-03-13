@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">KDN</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">དར་མདོའི་གསར་འགྱུར་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">dar mdo'i gsar 'gyur</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng">Kangding News</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn">kangding bao</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi">康定報</mods:title>
+  </mods:titleInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">cn</mods:languageTerm>
+  </mods:language>
+  <mods:originInfo>
+    <mods:dateCreated>1953 – 08.1954</mods:dateCreated>
+    <mods:frequency>every 5 days</mods:frequency>
+    <mods:dist>Ganzi</mods:dist>
+  </mods:originInfo>
+  <mods:abstract>3 pages in Tibetan; page 4 in Chinese. It was continued as Dkar mdzes gsar 'gyur (Ganzi bao) till May 1958, when the name changed into Dkar mdzes nyin re'i gsar 'gyur (Ganzi ribao); the Tibetan language edition today seems to be named Khams pa'i tshags par)</mods:abstract>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="eng">Xikang</mods:province>
+      <mods:county lang="eng">Xikang Province Tibetan Autonomous Region</mods:county>
+      <mods:city lang="eng">Dartsedo</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib">ཤིས་ཁམས་</mods:province>
+      <mods:county lang="tib">ཤིས་ཁམས་བོད་རིགས་རང་སྐྱོང་ས་ཁུལ་</mods:county>
+      <mods:city lang="tib">དར་རྩེ་མདོ་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">dkar mdzes</mods:county>
+      <mods:city lang="tib-Latn">dar rtse mdo</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi">西康省藏族自治區</mods:county>
+      <mods:city lang="chi">康定</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn"> Kangding</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>CHN</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">1150249846</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:note type="internal-holdings">1954.11.17 - 1955.06.08 </mods:note>
+  <mods:note type="comment">incomplete</mods:note>
+  <mods:identifier type="CN-newspaper-code">3</mods:identifier>
+  <mods:note type="donor">Grassi Museum für Völkerkunde</mods:note>
+  <mods:location>
+    <mods:url>https://zdb-katalog.de/title.xhtml?idn=1284204626; </mods:url>
+  </mods:location>
+</mods:mods>

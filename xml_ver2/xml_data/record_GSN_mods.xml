@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">GSN</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">རྒྱ་གར་གཞུང་གི་གསར་སྤེལ་ལས་ཁུངས་སྒང་ཐོག </mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">rgya gar gzhung gi gsar spel las khungs sgang thog</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng"> Government of India News Department Gangtok</mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="tib">རྒྱ་གར་གཞུང་གི་གསར་སྤེལ་ལས་ཁུང་</mods:publisher>
+    <mods:publisher lang="tib-Latn">rgya gar gzhung gi gsar spel las khungs</mods:publisher>
+    <mods:dateCreated>unknown – unknown</mods:dateCreated>
+    <mods:dist>India</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">hi</mods:languageTerm>
+  </mods:language>
+  <mods:abstract>misplaced</mods:abstract>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="eng">Sikkim</mods:province>
+      <mods:county lang="eng">Gangtok</mods:county>
+      <mods:city lang="eng">Gangtok</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="tib">འབྲས་ལྗོངས་</mods:province>
+      <mods:county lang="tib">གང་ཐོག་</mods:county>
+      <mods:city lang="tib">སྒང་ཐོག</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">gang thog</mods:county>
+      <mods:city lang="tib-Latn">sgang thog</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi"></mods:county>
+      <mods:city lang="chi"></mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn"></mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>IND</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4376532-4</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:note type="donor">Grassi Museum für Völkerkunde</mods:note>
+  <mods:note type="external-holdings">not scanned so far</mods:note>
+</mods:mods>

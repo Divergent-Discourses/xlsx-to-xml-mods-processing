@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">TID</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">བོད་ལྗོངས་ཉིན་རེའི་གསར་འགྱུར་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">bod ljongs nyin re'i gsar 'gyur</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng">Tibet Daily</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn">xizang ribao</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi">西藏日報</mods:title>
+  </mods:titleInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:originInfo>
+    <mods:dateCreated>1956 – continuing</mods:dateCreated>
+    <mods:frequency>daily </mods:frequency>
+    <mods:dist>Tibet</mods:dist>
+  </mods:originInfo>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="eng">Tibet</mods:province>
+      <mods:county lang="eng">Lhasa</mods:county>
+      <mods:city lang="eng">Lhasa</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib">བོད་ལྗོངས་</mods:province>
+      <mods:county lang="tib">ལྷ་ས་</mods:county>
+      <mods:city lang="tib">ལྷ་ས་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">lha sa</mods:county>
+      <mods:city lang="tib-Latn">lha sa</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi">拉薩</mods:county>
+      <mods:city lang="chi">拉薩</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn">Lasa</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>CHN</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4111286-6</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:identifier type="CN-newspaper-code">CN54-0001-Z</mods:identifier>
+  <mods:note type="donor">Vienna University South Asian, Tibetan and Buddhist Studies Library</mods:note>
+  <mods:note type="donor">Oriental Institute (CAS)</mods:note>
+  <mods:note type="donor">Staatsbibliothek zu Berlin</mods:note>
+  <mods:location>
+    <mods:url>https://kramerius.lib.cas.cz/uuid/uuid:cfcdc3e7-3244-40f5-9cb0-fbe5f6797bfc</mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url>https://zdb-katalog.de/title.xhtml?idn=1287995527</mods:url>
+  </mods:location>
+</mods:mods>

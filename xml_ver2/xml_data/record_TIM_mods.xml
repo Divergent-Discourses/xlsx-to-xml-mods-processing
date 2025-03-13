@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">TIM</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">ཡུལ་ཕྱོགས་སོ་སོའི་གསར་འགྱུར་མེ་ལོང་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">yul phyogs so so'i gsar 'gyur me long</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="eng">"Tibet Mirror"</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn"> </mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="tib">མེ་ལོང་པར་ཁང་</mods:publisher>
+    <mods:publisher lang="tib-Latn">me long par khang</mods:publisher>
+    <mods:publisher lang="eng">The Mirror Press</mods:publisher>
+    <mods:dateCreated>1926 – vol. 28(8) 01.11.1963</mods:dateCreated>
+    <mods:frequency>monthly, from XXX to XXX weekly</mods:frequency>
+    <mods:dist>India</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">en</mods:languageTerm>
+  </mods:language>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="eng">West Bengal</mods:province>
+      <mods:county lang="eng">Kalimpong</mods:county>
+      <mods:city lang="eng">Kālimpong, W.B.</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="tib"></mods:province>
+      <mods:county lang="tib">ཀ་སྦུག</mods:county>
+      <mods:city lang="tib">ཀ་སྦུག</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">ka sbug</mods:county>
+      <mods:city lang="tib-Latn">ka sbug</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi"></mods:county>
+      <mods:city lang="chi"></mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn"></mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>IND</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4346328-9</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:name type="personal">
+    <mods:namePart type="family" lang="eng">Dorje Tharchin</mods:namePart>
+    <mods:role>
+      <mods:roleTerm>editor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:name type="personal">
+    <mods:namePart type="family" lang="tib">རྡོ་རྗེ་མཐར་ཕྱིན་</mods:namePart>
+    <mods:role>
+      <mods:roleTerm>editor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:name type="personal">
+    <mods:namePart type="family" lang="tib-Latn">Rdo rje mthar phyin</mods:namePart>
+    <mods:role>
+      <mods:roleTerm>editor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:note type="internal-holdings">1930.03.31 - 1963.11.01</mods:note>
+  <mods:identifier type="IN-registration-number">Regd. C. 1386</mods:identifier>
+  <mods:note type="donor">Columbia University Libraries</mods:note>
+  <mods:note type="donor">Grassi Museum für Völkerkunde</mods:note>
+  <mods:note type="donor">College de France</mods:note>
+  <mods:location>
+    <mods:url> https://clio.columbia.edu/catalog/6816438</mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url>https://zdb-katalog.de/title.xhtml?idn=1284225577;</mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url> https://permalink.obvsg.at/AC16810250 </mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url>https://salamandre.college-de-france.fr/archives-en-ligne/ead.html?id=FR075CDF_00IET00TM&amp;c=FR075CDF_00IET00TM_e0000002&amp;qid=</mods:url>
+  </mods:location>
+</mods:mods>

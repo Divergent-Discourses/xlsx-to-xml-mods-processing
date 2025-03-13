@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">TDP</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">བོད་ལྗོངས་ཉིན་རེའི་གསར་འགྱུར་པར་རིས་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">bod ljongs nyin re'i gsar 'gyur par ris</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng">Tibet Daily Pictorial</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn">xizang ribao</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi">西藏日報</mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="chi">西藏自治區籌備委員會</mods:publisher>
+    <mods:publisher lang="chi-Latn">xizang zizhiqu choubei weiyuanhui</mods:publisher>
+    <mods:dist>Tibet</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">cn</mods:languageTerm>
+  </mods:language>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="eng">Tibet</mods:province>
+      <mods:county lang="eng">Lhasa</mods:county>
+      <mods:city lang="eng">Lhasa</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib">བོད་ལྗོངས་</mods:province>
+      <mods:county lang="tib">ལྷ་ས་</mods:county>
+      <mods:city lang="tib">ལྷ་ས་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">lha sa</mods:county>
+      <mods:city lang="tib-Latn">lha sa</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi">拉薩</mods:county>
+      <mods:city lang="chi">拉薩</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn">Lasa</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>CHN</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4111286-6</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:note type="internal-holdings">1959.01.01 - 1959.05.20 </mods:note>
+  <mods:note type="comment">incomplete</mods:note>
+  <mods:note type="donor">Oriental Institute (CAS)</mods:note>
+  <mods:location>
+    <mods:url>https://kramerius.lib.cas.cz/uuid/uuid:eaff16b4-ab0d-46d1-8b9f-e82beeed3392</mods:url>
+  </mods:location>
+</mods:mods>

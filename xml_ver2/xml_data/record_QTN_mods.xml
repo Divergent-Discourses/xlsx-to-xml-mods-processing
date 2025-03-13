@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">QTN</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">མཚོ་སྔོན་བོད་ཡིག་གསར་འགྱུར་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">mtsho sngon bod yig gsar 'gyur</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng">Qinghai Tibetan News</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn">qinghai zangwen bao</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi">青海藏文報</mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="tib">མཚོ་སྔོན་ཉིན་རེའི་ཚགས་པར་ཁང་</mods:publisher>
+    <mods:publisher lang="tib-Latn">mtsho sngon nyin re'i tshags par khang</mods:publisher>
+    <mods:publisher lang="chi">青海报社</mods:publisher>
+    <mods:publisher lang="chi-Latn">qinghai baoshe</mods:publisher>
+    <mods:dateCreated>16.01.1951 – continuing</mods:dateCreated>
+    <mods:frequency>every 5 days; every 2 days in the late 1950s</mods:frequency>
+    <mods:dist>Qinghai</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">cn</mods:languageTerm>
+  </mods:language>
+  <mods:abstract>2 to 4 pages; the last page often in Chinese</mods:abstract>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="eng">Qinghai</mods:province>
+      <mods:county lang="eng">Xining</mods:county>
+      <mods:city lang="eng">Xining</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib">མཚོ་སྔོན་</mods:province>
+      <mods:county lang="tib">ཟི་ལིང་</mods:county>
+      <mods:city lang="tib">ཟི་ལིང་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">zi ling</mods:county>
+      <mods:city lang="tib-Latn">zi ling</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi">西寧</mods:county>
+      <mods:city lang="chi">西寧</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn">Xining</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>CHN</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4435188-4</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:note type="internal-holdings">1951.09.16 - 1965.12.30 </mods:note>
+  <mods:note type="comment">incomplete</mods:note>
+  <mods:identifier type="CN-newspaper-code">CN63-0001-Z</mods:identifier>
+  <mods:note type="donor">Grassi Museum für Völkerkunde</mods:note>
+  <mods:note type="donor">Staatsbibliothek zu Berlin</mods:note>
+  <mods:note type="donor">Columbia University Libraries</mods:note>
+  <mods:note type="donor">Oriental Institute (CAS)</mods:note>
+  <mods:note type="donor">Vienna University South Asian, Tibetan and Buddhist Studies Library</mods:note>
+  <mods:location>
+    <mods:url>https://zdb-katalog.de/title.xhtml?idn=1286005965 </mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url>https://zdb-katalog.de/title.xhtml?idn=1287993648</mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url>https://clio.columbia.edu/catalog/4770861</mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url>https://kramerius.lib.cas.cz/uuid/uuid:cfcdc3e7-3244-40f5-9cb0-fbe5f6797bfc; </mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url>https://permalink.obvsg.at/AC16863999</mods:url>
+  </mods:location>
+</mods:mods>

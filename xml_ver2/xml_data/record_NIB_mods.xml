@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">NIB</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">གསར་འགྱུར་མདོར་བསྡུས་</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">gsar 'gyur mdor bsdud</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo type="translated">
+    <mods:title lang="eng">News in Brief</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi-Latn">xinwen jianxun</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="chi">新聞簡訊</mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="tib">ལྷ་ས་གསར་འགྱུར་མདོར་བསྡུས་ཁང་; རྩོམ་ཞིབ་ཨུ་ཡོན་ལྷན་ཁང་</mods:publisher>
+    <mods:publisher lang="tib-Latn">lha sa gsar 'gyur mdor bsdus khang; rtsom zhib u yon lhan khang</mods:publisher>
+    <mods:publisher lang="eng">Publications Office of the Tibet Military District </mods:publisher>
+    <mods:publisher lang="chi">西藏軍區藏文編審委員會</mods:publisher>
+    <mods:publisher lang="chi-Latn">xizang junqu zangwen bianzhen weiyua hui</mods:publisher>
+    <mods:dateCreated>01.1953 – 1955</mods:dateCreated>
+    <mods:frequency>every 5 days</mods:frequency>
+    <mods:dist>Tibet</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:abstract>4 pages in Tibetan cursive Ume script; from May 4, 1955 it is printed in movable type; at the same time a larger format was introduced </mods:abstract>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="eng">Tibet</mods:province>
+      <mods:county lang="eng">Lhasa</mods:county>
+      <mods:city lang="eng">Lhasa</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib">བོད་ལྗོངས་</mods:province>
+      <mods:county lang="tib">ལྷ་ས་</mods:county>
+      <mods:city lang="tib">ལྷ་ས་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">lha sa</mods:county>
+      <mods:city lang="tib-Latn">lha sa</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi">拉薩</mods:county>
+      <mods:city lang="chi">拉薩</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">CHN</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn">Lasa</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>CHN</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4111286-6</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:note type="internal-holdings">1953.12.01 - 1955.06.04 </mods:note>
+  <mods:note type="comment">incomplete</mods:note>
+  <mods:note type="donor">Grassi Museum für Völkerkunde</mods:note>
+  <mods:note type="donor">Library of Tibetan Works and Archives</mods:note>
+  <mods:note type="donor">Columbia University Libraries</mods:note>
+  <mods:note type="external-holdings">TL: 1953.12.01; 1953.12.16;</mods:note>
+  <mods:location>
+    <mods:url> https://zdb-katalog.de/title.xhtml?idn=1284129411</mods:url>
+  </mods:location>
+  <mods:location>
+    <mods:url>https://clio.columbia.edu/catalog/10634952;</mods:url>
+  </mods:location>
+</mods:mods>

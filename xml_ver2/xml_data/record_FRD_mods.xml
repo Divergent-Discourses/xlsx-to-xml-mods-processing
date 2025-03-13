@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+  <mods:identifier type="local">FRD</mods:identifier>
+  <mods:titleInfo>
+    <mods:title lang="tib">རང་དབང་གསར་ཤོག</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="tib-Latn">rang dbang gsar shog</mods:title>
+  </mods:titleInfo>
+  <mods:titleInfo>
+    <mods:title lang="eng">"Freedom"</mods:title>
+  </mods:titleInfo>
+  <mods:originInfo>
+    <mods:publisher lang="tib">རང་དབང་པར་ཁང་</mods:publisher>
+    <mods:publisher lang="tib-Latn">rang dbang par khang</mods:publisher>
+    <mods:publisher lang="eng">Freedom Press</mods:publisher>
+    <mods:dateCreated>1960 – 1965</mods:dateCreated>
+    <mods:frequency>weekly</mods:frequency>
+    <mods:dist>India</mods:dist>
+  </mods:originInfo>
+  <mods:language>
+    <mods:languageTerm type="code" authority="iso639-2b">bo</mods:languageTerm>
+  </mods:language>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="eng">West Bengal</mods:province>
+      <mods:county lang="eng">Darjeeling</mods:county>
+      <mods:city lang="eng">Darjeeling</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="tib"></mods:province>
+      <mods:county lang="tib">རྡོ་རྗེ་གླིང་</mods:county>
+      <mods:city lang="tib">རྡོ་རྗེ་གླིང་</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="tib-Latn"></mods:province>
+      <mods:county lang="tib-Latn">rdo rje gling</mods:county>
+      <mods:city lang="tib-Latn">rdo rje gling</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="chi"></mods:province>
+      <mods:county lang="chi"></mods:county>
+      <mods:city lang="chi"></mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country authority="iso3166">IND</mods:country>
+      <mods:province lang="chi-Latn"></mods:province>
+      <mods:county lang="chi-Latn"></mods:county>
+      <mods:city lang="chi-Latn"></mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:subject>
+    <mods:hierarchicalGeographic>
+      <mods:country>IND</mods:country>
+      <mods:province></mods:province>
+      <mods:county></mods:county>
+      <mods:city authority="GND">4011057-6</mods:city>
+    </mods:hierarchicalGeographic>
+  </mods:subject>
+  <mods:name type="personal">
+    <mods:namePart type="family" lang="tib">ཡེ་ཤེས་དར་རྒྱས་</mods:namePart>
+    <mods:role>
+      <mods:roleTerm>editor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:name type="personal">
+    <mods:namePart type="family" lang="tib-Latn">Ye shes dar rgyas</mods:namePart>
+    <mods:role>
+      <mods:roleTerm>editor</mods:roleTerm>
+    </mods:role>
+  </mods:name>
+  <mods:note type="internal-holdings">1961.02.10 - 1965.03.05</mods:note>
+  <mods:note type="comment">incomplete</mods:note>
+  <mods:identifier type="IN-registration-number">Regd. No. 5156</mods:identifier>
+  <mods:note type="donor">Vienna University South Asian, Tibetan and Buddhist Studies Library</mods:note>
+  <mods:location>
+    <mods:url>https://permalink.obvsg.at/AC16809715</mods:url>
+  </mods:location>
+</mods:mods>
