@@ -1,0 +1,66 @@
+name: Robust Cross-Repo Processing
+
+on:
+  push:
+    paths:
+      - 'source/Diverge_Newspaper Metadata for XML v2.xlsx'
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  process-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source repo
+      uses: actions/checkout@v4
+      with:
+        path: 'source'
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: python -m pip install -r requirements.txt
+      working-directory: source
+
+    - name: Run processing script
+      run: python process/process.py
+      working-directory: source
+
+    - name: Verify output
+      run: |
+        if [ ! -d "source/processed" ]; then
+          echo "::error::No output directory created"
+          exit 1
+        fi
+        if [ -z "$(ls -A source/processed)" ]; then
+          echo "::error::Output directory is empty"
+          exit 1
+        fi
+
+    - name: Checkout target repo
+      uses: actions/checkout@v4
+      with:
+        repository: StabiBerlin/MODS-records
+        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+        path: 'target'
+        persist-credentials: false
+
+    - name: Sync processed files
+      run: |
+        mkdir -p target/processed/
+        rsync -av --delete-after --exclude '.git' source/processed/ target/processed/
+        date > target/last_updated.txt
+
+    - name: Commit and push
+      working-directory: target
+      run: |
+        git config --global user.name "Data Processing Bot"
+        git config --global user.email "bot@example.com"
+        git add .
+        git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update: Processed data from source commit ${{ github.sha }}"
+        git push
