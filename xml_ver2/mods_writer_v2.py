@@ -2,7 +2,7 @@ from pymods import Mods
 import os
 import pandas as pd
 sourcefile = os.path.dirname(os.path.dirname('Diverge_Newspaper Metadata for XML v2.xlsx'))
-resource = pd.read_excel('test_xl.xlsx')
+resource = pd.read_excel(sourcefile)
 resource = resource.fillna('').astype(str)
 
 for index, row in resource.iterrows():
