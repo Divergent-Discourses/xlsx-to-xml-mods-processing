@@ -41,7 +41,10 @@ jobs:
           echo "::error::Output directory is empty"
           exit 1
         fi
+    
+    # TODO(DP): Should validation already run here to prevent pushed of invalid xml?
 
+    # TODO(DP): why change credentials for the push? see #3
     - name: Checkout target repo
       uses: actions/checkout@v4
       with:
@@ -56,6 +59,7 @@ jobs:
         rsync -av --delete-after --exclude '.git' source/processed/ target/processed/
         date > target/last_updated.txt
 
+    # TODO(DP) this bot would need to get push access in stabi org, can it get a project related username? see #3
     - name: Commit and push
       working-directory: target
       run: |
