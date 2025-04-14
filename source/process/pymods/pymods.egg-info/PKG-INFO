@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pymods
+Version: 0.2.1
+Summary: Utility class wrapping lxml for building MODS v3.4 XML metadata.
+Author: Matt Cordial
+Author-email: matt.cordial@gmail.com
+Keywords: MODS metadata xml

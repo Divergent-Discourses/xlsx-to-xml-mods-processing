@@ -1,0 +1,6 @@
+setup.py
+pymods.egg-info/PKG-INFO
+pymods.egg-info/SOURCES.txt
+pymods.egg-info/dependency_links.txt
+pymods.egg-info/requires.txt
+pymods.egg-info/top_level.txt
