@@ -30,11 +30,11 @@ jobs:
 
     - name: Verify output
       run: |
-        if [ ! -d "source/processed" ]; then
+        if [ ! -d "xml_ver2/xml_data" ]; then
           echo "::error::No output directory created"
           exit 1
         fi
-        if [ -z "$(ls -A source/processed)" ]; then
+        if [ -z "$(ls -A xml_ver2/xml_data)" ]; then
           echo "::error::Output directory is empty"
           exit 1
         fi
