@@ -5,7 +5,7 @@ import sys
 
 # Add pymods to Python path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-excel_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'Diverge_Newspaper Metadata for XML v2.xlsx')
+excel_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'source/Diverge_Newspaper Metadata for XML v2.xlsx')
 resource = pd.read_excel(excel_path)
 resource = resource.fillna('').astype(str)
 
