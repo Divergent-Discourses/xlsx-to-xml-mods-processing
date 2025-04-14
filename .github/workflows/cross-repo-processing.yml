@@ -28,7 +28,7 @@ jobs:
       working-directory: source
 
     - name: Run processing script
-      run: python process/process.py
+      run: python xml_ver2/mods_writer_v2.py
       working-directory: source
 
     - name: Verify output
