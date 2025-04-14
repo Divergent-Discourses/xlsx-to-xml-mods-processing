@@ -48,7 +48,6 @@ jobs:
         repository: StabiBerlin/MODS-records
         token: ${{ secrets.REPO_ACCESS_TOKEN }}
         path: 'target'
-        persist-credentials: false
 
     - name: Sync processed files
       run: |
