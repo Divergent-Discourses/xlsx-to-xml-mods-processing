@@ -181,5 +181,5 @@ for index, row in resource.iterrows():
         mods_record.add_distribution(row['Place(s) of distribution'])   
 
     # Save the MODS record to a file
-    with open(f'xml_records/record_{code}_mods.xml', 'wb') as f:
+    with open(f'xml_data/record_{code}_mods.xml', 'wb') as f:
         f.write(mods_record.as_xml(xml_declaration=True, pretty_print=True))
