@@ -28,8 +28,8 @@ jobs:
       working-directory: source
 
     - name: Run processing script
-      run: python xml_ver2/mods_writer_v2.py
-      working-directory: source
+      run: python mods_writer_v2.py
+      working-directory: xml_ver2
 
     - name: Verify output
       run: |
