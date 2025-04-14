@@ -52,7 +52,7 @@ jobs:
     - name: Sync processed files
       run: |
         mkdir -p target/processed/
-        rsync -av --delete-after --exclude '.git' source/processed/ target/processed/
+        rsync -av --delete-after --exclude '.git' xml_ver2/xml_data/ xml-data/
         date > target/last_updated.txt
 
     # TODO(DP) this bot would need to get push access in stabi org, can it get a project related username? see #3
